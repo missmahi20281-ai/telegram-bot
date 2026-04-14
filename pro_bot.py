@@ -29,7 +29,7 @@ async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         await update.message.reply_text("Invalid number!")
 
-app = ApplicationBuilder().token(TOKEN).build()
+app = ApplicationBuilder().token(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).build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT, check))
